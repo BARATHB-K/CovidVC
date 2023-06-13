@@ -3,9 +3,17 @@ I am Barath Kumar S
 
 # Covid Vaccination Booking
 
+The Covid Vaccination Booking web application is designed to facilitate the process of booking vaccination slots for users and managing vaccination centers for administrators. The application is built using Node.js for the backend and uses React for the frontend.
+
 ## ADMIN DETAILS
 Admin UserName : Admin@gmail.com
 Admin Password:  12345678
+
+## ADMIN FEATURES
+- **Login**: Administrators have a separate login to access admin functionalities.
+Add Vaccination Centers: Admins can add new vaccination centers to the system.
+Get Dosage Details: Admins can view dosage details grouped by vaccination centers.
+Remove Vaccination Centers: Admins can remove existing vaccination centers from the system.
 
 ## USER DETAILS OR SIGNUP
 UserName :  Barath@gmail.com
