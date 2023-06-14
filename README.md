@@ -31,7 +31,7 @@ Password :  12345678
 - *Database*: Mongo DB
 
 ### `server-folder`
-For server-side communication I used Node J and Mongo DB as DataBase
+For server-side communication I used Node JS and Mongo DB as DataBase
 
 ### `src-folder`
 For front-end I used ReactJS
