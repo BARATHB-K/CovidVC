@@ -203,11 +203,11 @@ const searchCentres = async (req, res) => {
 
 // User Booking Dosage
 const bookDosage = async (req, res) => {
-    const { idv, centre, date } = req.body;
+    const { date } = req.body;
 
     try {
         // Check if the maximum limit of candidates (10) has been reached for the given date
-        const booking = await Booking.findOne({ idv, date });
+        const booking = await Booking.findOne({ date });
 
         if (booking && booking.persons >= 10) {
             return res.json({ status: "notok", message: 'Booking limit reached for this date' });
@@ -218,7 +218,7 @@ const bookDosage = async (req, res) => {
             booking.persons += 1;
             await booking.save();
         } else {
-            const newBooking = new Booking({ idv, centre, date, persons: 1 });
+            const newBooking = new Booking({ date, persons: 1 });
             await newBooking.save();
         }
         return res.json({ status: "ok", message: 'Vaccination slot booked successfully' });
